@@ -48,7 +48,7 @@ class Engine {
       print('Invalid!, this place is already filled');
       print('---------------------------------------');
     } else {
-      Allinputs[x][y] = "Y";
+      Allinputs[x][y] = "X";
     }
   }
 

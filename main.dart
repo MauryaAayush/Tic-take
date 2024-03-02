@@ -24,11 +24,17 @@ class Engine {
     print("Turn's O : ");
     print('Enter the position');
 
+    stdout.write('Row : ');
     x = int.parse(stdin.readLineSync()!);
+    stdout.write('Column : ');
     y = int.parse(stdin.readLineSync()!);
 
     if (Allinputs[x][y] == "X" || Allinputs[x][y] == "O") {
+      print('---------------------------------------');
       print('Invalid!, this place is already filled');
+      print('---------------------------------------');
+      showboard();
+      O();
     } else {
       Allinputs[x][y] = "O";
     }
@@ -47,6 +53,8 @@ class Engine {
       print('---------------------------------------');
       print('Invalid!, this place is already filled');
       print('---------------------------------------');
+      showboard();
+      X();
     } else {
       Allinputs[x][y] = "X";
     }
